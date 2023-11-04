@@ -1,52 +1,569 @@
-# Prerequisites
-*.d
+using System;
+using System.Linq;
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+namespace M_yazma;
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+public static class Program
+{
+	public static void Main()
+	{			
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz 
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 1; i++)    // sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 	
+		for (int i = 0; i < 40; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 1; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");	
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = -1; i < 1; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 38; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 2; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 3; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 36; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 3; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 4; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 34; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 4; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 5; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 32; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 5; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 6; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 30; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 6; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 7; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 28; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 7; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 8; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 26; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 8; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 9; i++)     // sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 24; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 9; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 10; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 22; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 10; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 11; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 20; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 11; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 12; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 18; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 12; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 13; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 16; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 13; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 14; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 14; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 14; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 15; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 12; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 15; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 16; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 10; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 16; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 17; i++)	 // sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 8; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 17; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 18; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 6; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 18; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 19; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 4; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 19; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 20; i++)	// sol capraz
+		{
+			Console.Write(" ");
+		} 
+		Console.Write("."); 
+		for (int i = 0; i < 2; i++)   // sag capraz
+		{
+			Console.Write(" ");
+		} 	
+        Console.Write("."); 
+		for (int i = 0; i < 20; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");	
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 21; i++)   // orta noktalar
+		{
+			Console.Write(" ");
+		} 	
+		Console.Write(".");
+		Console.Write(".");
+		for (int i = 0; i < 21; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");		
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+		Console.WriteLine(" ");
+		for (int i = 0; i < 40; i++)   // sol düz
+		{
+			Console.Write(" ");
+		}		
+		Console.Write(".");
+		for (int i = 0; i < 44; i++)   // sag düz
+		{
+			Console.Write(" ");
+		}
+		Console.Write(".");
+	}
+}
